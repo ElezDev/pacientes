@@ -1,21 +1,33 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="assets/logo.png" id="icon" alt="User Icon" />
+      <img src="https://www.tmotiva.pe/wp-content/uploads/2019/11/logo-SIN-FONDO.png" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
-    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
-      <input type="text" id="login" class="fadeIn second"  placeholder="login" formControlName="usuario"  >
-      <input type="password" id="password" class="fadeIn third"  placeholder="password" formControlName="password"  >
+    <form [formGroup]="loginForm" (ngSubmit)="OnLogin(loginForm.value)">
+      <input type="text" id="login" class="fadeIn second"  placeholder="User name" formControlName="email"  >
+      <input type="password" id="password" class="fadeIn third"  placeholder="password" formControlName="pasword"  >
+    
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
@@ -26,3 +38,8 @@
 
   </div>
 </div>
+</body>
+</html>
+
+
+

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl,Validators  } from '@angular/forms';
-
+import { ApiService  } from '../../servicios/api/api.service';
+import { LoginI } from '../../modelos/loguin.interface';
 
 @Component({
   selector: 'app-loguin',
@@ -9,22 +10,22 @@ import { FormGroup,FormControl,Validators  } from '@angular/forms';
 })
 
 
-export class LoguinComponent{
-
-  loginForm = new FormGroup( {
-    usuario : new FormControl ("", Validators.required),
-    password : new FormControl ("", Validators.required),
+export class LoguinComponent implements OnInit {
+  loginForm = new FormGroup({
+    email: new FormGroup('', Validators.required),
+    pasword: new FormGroup ('', Validators.required)
   })
 
 
-constructor (){}
+constructor (private api:ApiService){}
 
 ngOnInit(): void{
 
 }
-
-onLogin(form: any){
-  console.log(form)
+OnLogin(form:LoginI){
+  this.api.loginByEmail(form).subscribe(data=>{
+    console.log(data)
+  })
 }
 
  

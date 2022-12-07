@@ -8,6 +8,9 @@ html {
   body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    background-color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.upb.edu.co/es/imagenes/img-practicas-docente-practica-clinica-1464257075985.jpg);
+    box-shadow: 0 30px 60px 0 rgba(7, 15, 8, 0.3);
   }
   
   a {
@@ -44,19 +47,19 @@ html {
   #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
+    box-shadow: 0 0 1rem 0 rgba(184, 40, 40, 0.2); 
     padding: 30px;
     width: 90%;
     max-width: 450px;
     position: relative;
     padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(28, 137, 187, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(1, 39, 37, 0.479);
     text-align: center;
   }
   
   #formFooter {
-    background-color: #f6f6f6;
+    background-color: #f8f6f6;
     border-top: 1px solid #dce8f1;
     padding: 25px;
     text-align: center;
