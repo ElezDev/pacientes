@@ -11,6 +11,7 @@ import { DashboarDComponent } from './vistas/dashboar-d/dashboar-d.component';
 import { NuevoComponent } from './vistas/nuevo/nuevo.component';
 import { EditComponent } from './vistas/edit/edit.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import {HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule 
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
