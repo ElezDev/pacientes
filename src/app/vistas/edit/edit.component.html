@@ -1,1 +1,51 @@
-<p>edit works!</p>
+<app-headers></app-headers>
+<br><br>
+<div class="container">
+    
+        <form [formGroup]="editarform" (ngSubmit)="postForm(editarform.value)">
+
+    <div class="form-group">
+        <label for="exampleFormControlinput1">Nombre</label>
+        <input type="text" class=" form-control" placeholder="Nombre" formControlName="nombre">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlinput1">Direccion</label>
+        <input type="text" class=" form-control" placeholder="Direccion" formControlName="direccion">
+    </div>
+
+    <div class="form-group row">
+        <div class="col">
+        <label for="exampleFormControlinput1">Cp</label>
+        <input type="text" class=" form-control" placeholder="codigoPostal" formControlName="codigoPostal">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlinput1">Genero</label>
+        <input type="text" class=" form-control" placeholder="genero" formControlName="genero">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlinput1">Tel</label>
+        <input type="text" class=" form-control" placeholder="telefono" formControlName="telefono">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlinput1">fechaNacimiento</label>
+        <input type="date" class=" form-control" placeholder="fechaNacimiento" formControlName="fechaNacimiento">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlinput1">DNI</label>
+        <input type="text" class=" form-control" placeholder="Direccion" formControlName="dni">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlinput1">Correo</label>
+        <input type="text" class=" form-control" placeholder="Correo" formControlName="correo">
+    </div>
+
+
+ 
+
+
+    </div>
+    <br><br>
+    <button style="align-items: center;" type="submit" class="btn btn-warning">Gardar</button>
+    <button style="align-items: center;" type="button"  class="btn btn-danger">Eliminar</button>
+
+</form>

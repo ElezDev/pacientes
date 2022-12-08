@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HeadersComponent } from './plantillas/headers/headers.component';
 import { FooterComponent } from './plantillas/footer/footer.component';
 import { LoguinComponent } from './vistas/loguin/loguin.component';
-import { DashboarDComponent } from './vistas/dashboar-d/dashboar-d.component';
+import { DashboarDComponent } from './vistas/dashboard/dashboard.component';
 import { NuevoComponent } from './vistas/nuevo/nuevo.component';
 import { EditComponent } from './vistas/edit/edit.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
